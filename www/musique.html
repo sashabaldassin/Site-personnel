@@ -1,31 +1,44 @@
+<!--Document appartenant à Sasha BALDASSIN L2 info Groupe F-->
+
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title> Upsiring </title>
-    <link rel="stylesheet" href="accueil.css" />
-    <link rel="stylesheet" href="petitecran.css" />
-    <link rel="stylesheet" href="grandecran.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upsiring</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/petitecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/grandecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/moyenecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
 </head>
 
 <body>
+
     <header>
         <a href="index.html">
-            <img src="upsiring.jpg" alt="Logo"></a>
+            <img src="image/upsiring.jpg" alt="Logo"></a>
 
         <h1> Le site officiel d'Upsiring</h1>
+        <a href="formulaire.html" class="bouton">
+            S'INSCRIRE
+        </a>
+        <a href="connexion.html" class="bouton">
+            SE CONNECTER
+        </a>
     </header>
+
     <nav>
-        <ul>
+        <ul class="menu-large-screen">
             <li><a href="index.html">
                     <h2>Accueil</h2>
                 </a></li>
             <li><a href="musique.html">
                     <h2>Musiques</h2>
                 </a></li>
-            <li><a href="contact.html">
+            <li><a href="membres.html">
                     <h2>Membres</h2>
                 </a></li>
             <li><a href="photos.html">
@@ -35,13 +48,29 @@
                     <h2>Dates</h2>
                 </a></li>
             <li><a href="forum.html">
-                    <h2>Forum/faq</h2>
+                    <h2>Forum</h2>
                 </a></li>
         </ul>
     </nav>
 
-    <main>
+    <div class="menuclass">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu-small-screen">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="musique.html">Musiques</a></li>
+            <li><a href="membres.html">Membres</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="date.html">Dates</a></li>
+            <li><a href="forum.html">Forum</a></li>
+        </ul>
+    </div>
 
+    <main>
 
         <div class="sidebar">
             <h2>Musiques</h2>
@@ -57,7 +86,7 @@
                 <li><a href="#Violence">Violence is never the solution</a></li>
                 <li><a href="#Venomous">Venomous</a></li>
                 <li><a href="#Like">Like tears in the rain</a></li>
-                <li><a href="#Adikction">Adiktion</a></li>
+                <li><a href="#Adiktion">Adiktion</a></li>
                 <li><a href="#Scorn">Scorn your love</a></li>
             </ul>
         </div>
@@ -68,10 +97,10 @@
             Afin de créér nos compositions, nous utilisons le logiciel FL studio où nous enregistrons nos instruments et
             les voix à l'aide d'une carte son. <br>
             Nos musiques sont disponibles sur youtube sur le lien suivant :
-            Mais vous pouvez venir en live pour les entendre ! ^^
+            Mais vous pouvez venir en live pour les entendre !
 
         </article>
-            
+
         <p>Nous avons composé notre premier album<a href="#album1"> Far from mind</a>
             en 2022, nous avons finalisé le deuxième <a href="#album2"> Contagious</a> en février 2024. </p>
         <section id="album1">
@@ -95,16 +124,16 @@
             <h2>Explication des musiques</h2>
             <section id="Long">
                 <h3>Long season again : </h3>
-                <p>Long season again a été composée par <a href="contact.html#joss">Josselin</a>, <a
-                        href="contact.html#Jo">Jo</a> et <a href="contact.html#Sasha">Sasha</a> . <br>
+                <p>Long season again a été composée par <a href="membres.html#joss">Josselin</a>, <a
+                        href="membres.html#Jo">Jo</a> et <a href="membres.html#Sasha">Sasha</a> . <br>
                     Cette musique est faite pour donner plein d'espoir et imitée la fin d'un générique d'une série
                     américaine. <br>
                     C'est la musique où nous avons probablement le plus travaillé.</p>
             </section>
             <section id="As">
                 <h3>As far : </h3>
-                <p>As far est une musique mélancolique composée par <a href="contact.html#joss">Josselin</a>. Les
-                    paroles ont été écrites par <a href="contact.html#Jo">Jo</a> . <br>
+                <p>As far est une musique mélancolique composée par <a href="membres.html#joss">Josselin</a>. Les
+                    paroles ont été écrites par <a href="membres.html#Jo">Jo</a> . <br>
                     Cette musique a été notre première composition et également notre premier texte. <br>
                     Elle est très mélancolique et a connu plusieurs versions car elle ne plaisait pas à tous les membres
                     du
@@ -113,33 +142,28 @@
             </section>
             <section id="Sero">
                 <h3>Sérosirène : </h3>
-                <p>Sérosirène est une musique entièrement composée par <a href="contact.html#Jo">Jo</a> . <br>
+                <p>Sérosirène est une musique entièrement composée par <a href="membres.html#Jo">Jo</a> . <br>
                     Les paroles témoignent d'une de ses expériences personnelles qui a failli mettre fin à ces jours.
                     <br>
                     Depuis, elle a longuement travaillé sur les paroles afin de transmettre un message lui permettant de
                     s'exprimer et d'extérioriser. <br>
-                    Il existe plusieurs versions de sérosirène :
-                </p> <br>
-                <ul class="pointListe">
-                    <li> Accoustique : la version originale</li>
-                    <li> Rock </li>
-                    <li> Poprock : Un mélange de ces deux versions avec beaucoup plus de travail sur la voix</li>
-                </ul>
+                    Il existe plusieurs versions de sérosirène : Accoustique, Rock et Poprock.
+                </p>
 
             </section>
             <section id="Laug">
                 <h3>Laughing Hope: </h3>
-                <p>Laughing hope est une musique composée par <a href="contact.html#joss">Josselin</a>. Les paroles ont
-                    été écrites par <a href="contact.html#Jo">Jo</a> . <br>
+                <p>Laughing hope est une musique composée par <a href="membres.html#joss">Josselin</a>. Les paroles ont
+                    été écrites par <a href="membres.html#Jo">Jo</a> . <br>
                     Elle parle des difficultés à déménager pour ses études, changer de ville, d'amis, quitter ses
                     parents et tout ce qui englobe ce sujet. <br>
-                    Cette musique est basée sur l'expérience de <a href="contact.html#Jo">Jo</a>.
+                    Cette musique est basée sur l'expérience de <a href="membres.html#Jo">Jo</a>.
             </section>
             <section id="Calm">
                 <h3>Calm : </h3>
-                <p>Calm a été composée par <a href="contact.html#joss">Josselin</a> et <a
-                        href="contact.html#Sasha">Sasha</a>. <br>
-                    Les paroles ont été écrites par <a href="contact.html#Jo">Jo</a> . <br>
+                <p>Calm a été composée par <a href="membres.html#joss">Josselin</a> et <a
+                        href="membres.html#Sasha">Sasha</a>. <br>
+                    Les paroles ont été écrites par <a href="membres.html#Jo">Jo</a> . <br>
                     Cette musique a d'abord été créée car nous voulions avoir une musique plus posée ou nous pouvions
                     mettre
                     de la tension au fil de la musique. <br>
@@ -151,12 +175,13 @@
                 <h3>think about you : </h3>
                 <p>Think about you est la musique qui cloture l'album. <br>
                     Pleine de mélancolie et de joie, cette musique a été écrite par <a
-                        href="contact.html#Charly">Charly</a> suite au décès de son grand-père.
+                        href="membres.html#Charly">Charly</a>
+                    suite au décès de son grand-père.
                     <br>
-                    C'est <a href="contact.html#joss">Josselin</a> qui a écrit l'arrangement face au parole.
+                    C'est <a href="membres.html#joss">Josselin</a> qui a écrit l'arrangement face au parole.
                 </p>
             </section>
-            
+
         </article>
 
         <section id="album2">
@@ -188,18 +213,18 @@
                     Cette musique est en français afin de pouvoir nous exprimer sur des problèmes politiques avec
                     beaucoup
                     plus d'aisance. <br>
-                    C'est <a href="contact.html#joss">Josselin</a> et <a href="contact.html#Jo">Jo</a> qui en sont les
+                    C'est <a href="membres.html#joss">Josselin</a> et <a href="membres.html#Jo">Jo</a> qui en sont les
                     auteurs. </p>
             </section>
             <section id="Violence">
                 <h3>Violence is never the solution : </h3>
-                <p>Violence is never the solution est entièrement composée par <a href="contact.html#joss">Josselin</a>,
+                <p>Violence is never the solution est entièrement composée par <a href="membres.html#joss">Josselin</a>,
                     musique et paroles. <br>
                     Les riffs sont très insipirés de Muse mais nous avons une touche de <a
-                        href="contact.html#joss">Josselin</a> par-dessus très présente.
+                        href="membres.html#joss">Josselin</a> par-dessus très présente.
                     <br>
                     Cette musique a été écrite en parallèle d'un autre projet : Musescore. <br>
-                    En parallèle, <a href="contact.html#joss">Josselin</a> écrit une partition pour orchestre harmonique
+                    En parallèle, <a href="membres.html#joss">Josselin</a> écrit une partition pour orchestre harmonique
                     afin d'accompagner cette musique.
                     <br>
                     L'objectif est de mélanger Groupe de musique actuelle et Orchestre harmonique.
@@ -207,12 +232,12 @@
             </section>
             <section id="Venomous">
                 <h3>Venomous : </h3>
-                <p>Venomous est la deuxième musique entièrement composé par <a href="contact.html#joss">Josselin</a>.
+                <p>Venomous est la deuxième musique entièrement composé par <a href="membres.html#joss">Josselin</a>.
                     <br>
                     Cette musique parle de thèmes beaucoup plus engagés comme ceux de la société, ceux de la religion
                     etc.
                     <br>
-                    Il était important pour <a href="contact.html#joss">Josselin</a> de faire une chanson engagée afin
+                    Il était important pour <a href="membres.html#joss">Josselin</a> de faire une chanson engagée afin
                     de
                     faire réagir.
                 </p>
@@ -224,8 +249,8 @@
                     <br>
                     Cela se témoigne notemment par l'absence de batterie au début du morceau, le lead couvrant toute la
                     chanson et les mêmes accords. <br>
-                    Cette musique a été écrite par <a href="contact.html#Jill">Jill</a> et composée par <a
-                        href="contact.html#Sasha">Sasha</a> suite au décès de son chien. <br>
+                    Cette musique a été écrite par <a href="membres.html#Jill">Jill</a> et composée par <a
+                        href="membres.html#Sasha">Sasha</a> suite au décès de son chien. <br>
                     Elle parle de désespoir jusqu'au changement d'accords qui nous laisse apparaître une lueur d'espoir.
                 </p>
             </section>
@@ -235,17 +260,18 @@
                 <p>Adicktion est une musique inspirée de l'un des groupes préféres commun à tout les membres : Muse.
                     <br>
                     Le riff principale est très très inspirée de ce groupe et a été composé par <a
-                        href="contact.html#joss">Josselin</a> et <a href="contact.html#Sasha">Sasha</a>. <br>
-                    Les paroles ont été écrites par <a href="contact.html#Jo">Jo</a> une fois avoir entendu la musique.
+                        href="membres.html#joss">Josselin</a> et <a href="membres.html#Sasha">Sasha</a>. <br>
+                    Les paroles ont été écrites par <a href="membres.html#Jo">Jo</a> une fois avoir entendu la musique.
                     <br>
-                    Elle parle de </p>
+                    Elle parle de
+                </p>
             </section>
             <section id="Scorn">
                 <h3>Scorn your love</h3>
                 <p>Scorn your love cloture ce deuxième album. <br>
                     Cette musique est beaucoup plus sombre. <br>
-                    Elle a été composée par <a href="contact.html#Sasha">Sasha</a> et a écrit les paroles avec <a
-                        href="contact.html#Jo">Jo</a> . <br>
+                    Elle a été composée par <a href="membres.html#Sasha">Sasha</a> et a écrit les paroles avec <a
+                        href="membres.html#Jo">Jo</a> . <br>
                     Cette musique relate les sentiments, les ressentis et le mal que nous pouvons ressentir à cause
                     d'évènements. </p>
 
@@ -256,16 +282,16 @@
         <footer>
             <nav>
                 <a href="https://www.instagram.com/upsiring_band?igsh=dnB5Z3g4a2wybzJ1" target="_blank">
-                    <img src="insta.jpg" alt="Instagram">
+                    <img src="image/insta.jpg" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100093537181391" target="_blank">
-                    <img src="facebook.jpg" alt="Facebook">
+                    <img src="image/facebook.jpg" alt="Facebook">
                 </a>
                 <a href="https://www.tiktok.com/@upsiring" target="_blank">
-                    <img src="tiktok.jpg" alt="Tiktok">
+                    <img src="image/tiktok.jpg" alt="Tiktok">
                 </a>
                 <a href="https://www.youtube.com/@UPSIRING_BAND" target="_blank">
-                    <img src="youtube.jpg" alt="Youtube">
+                    <img src="image/youtube.jpg" alt="Youtube">
                 </a>
             </nav>
         </footer>

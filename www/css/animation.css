@@ -1,0 +1,121 @@
+/*Document appartenant à Sasha BALDASSIN L2 info Groupe F*/
+/* Fichier contenant toutes les transitions et les animations*/
+
+/*********************************************************Lien****************************************************/
+
+/*Les liens dans les listes */
+li a {
+    color: #9b9696;
+    /* Pour faire remarquer à l'utilisateur que c'est un lien, on laisse le soulignement*/
+    text-decoration: underline;
+    /*Transition pour la couleur et le focus*/
+    transition: color 0.2s ease-out, transform 0.2s ease;
+}
+
+
+/* Les liens dans les paragraphes et le cadre sur le côté */
+p a,
+.sidebar a {
+    color: rgb(29, 73, 139);
+    /* On enlève le soulignement */
+    text-decoration: none;
+    /* Transition pour la couleur et le focus*/
+    transition: color 0.2s ease-out, transform 0.2s ease;
+}
+
+/* Lles liens survolés ou en focus */
+a:not(footer a):not(header a):hover,
+a:not(footer a):not(header img):focus {
+    /* Couleur du texte en survol ou en focus */
+    color: #ffffff;
+    /* Zoom */
+    transform: scale(1.3);
+}
+
+/*************************************************Bouton****************************************/
+
+/* Pseudo-élément ajouté aux boutons */
+button:not(.buttonForm):after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    /*Ajouter un peu de flou*/
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+/*Un bouton est survolé par la souris*/
+button:not(.buttonForm):hover {
+    color: black;
+    background-color: var(--glow-color);
+}
+
+/* Effet au clic sur les boutons */
+button:not(.buttonForm):active {
+    /*Effet d'ombre*/
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+/*******************************************Formulaire************************************************/
+
+/*Les champs de saisie focus */
+.conatainer .input:focus {
+    border: 2px solid transparent;
+    color: #f0e5e5;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px rgba(219, 172, 172, 0.4);
+}
+
+/* Si on clique sur un champs, le label se déplace en haut à gauche */
+.container .input:valid~.label,
+.container .input:focus~.label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-200%);
+}
+
+/* Les champs que l'utilisateur peut remplir*/
+.container .input,
+.container .input:focus {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+/* Bouton de formulaire au survol de la souris*/
+.buttonForm:hover {
+    background-color: #f8d1d1;
+}
+
+/*Chaque élément de la liste du cadre sur le côté*/
+.sidebar ul li {
+    padding: 1%;
+}
+
+/* Les liens dans le cadre du côté gauche */
+.sidebar ul li a {
+    /* Couleur du texte sans survol*/
+    color: rgb(29, 73, 139);
+    /* Soulignement pour expliciter que c'est un lien*/
+    text-decoration: underline;
+}
+
+/* Les liens dans le cadre sur le côté durant le survol*/
+.sidebar ul li a:hover {
+    /* Couleur du texte en survol de la souris*/
+    color: rgb(223, 204, 204);
+    /* on spécifie qu'on ne veut pas de fond*/
+    background-color: transparent;
+}

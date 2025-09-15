@@ -1,0 +1,595 @@
+/*Document appartenant à Sasha BALDASSIN L2 info Groupe F*/
+/*Fichier CSS attribuant les caractéristiques générales au site*/
+
+@import url("normalize.css");
+
+
+/*******************************************************Body*******************************************/
+
+body {
+    background-image: radial-gradient(circle, #161616, #241f1f);
+    /*Couleur de fond* de tout le site*/
+    color: rgb(241, 233, 233);
+    /*Couleur de l'écriture par défaut sur le site*/
+    /*Décalage pour homogéinité entre les tailles d'écran*/
+    margin-right: 5%;
+    margin-left: 14%;
+}
+
+
+/*******************************************************Header*******************************************/
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-image: radial-gradient(circle, #2e302d, #000000);
+    align-items: center;
+
+    /*Éléments alignés sur la même ligne*/
+    margin: 0.2% 0.5% 1% 0.5%;
+    border-radius: 1%;
+    padding: 3%;
+}
+
+header h1 {
+    justify-content: center;
+    /*Sur tous les formats, le titre est centré*/
+    margin-right: 10%;
+    text-align: center;
+}
+
+/******************************************************Navigation**************************************************/
+
+
+/*On affiche le menu burger uniquement si on est sur petit écran*/
+.menu-small-screen {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/*****************************************************Pied de page**********************************************/
+
+footer {
+    width: 100%;
+    height: 100%;
+}
+
+/*Image de la page d'accueil dans le footer*/
+footer>img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+
+/*Alignement des logos des réseaux au centre*/
+footer>nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    /*Couleur noir pour faire ressortir les logos blancs*/
+}
+
+/*Taille des logos*/
+footer>nav img {
+    margin-right: 2em;
+    height: 2em;
+    margin-bottom: 20%;
+}
+
+/************************************Section********************************/
+
+
+/*Caractéristiques générales d'une section*/
+section {
+    background-image: radial-gradient(circle, #000000, #353535);
+    margin-top: 5%;
+    /*On espace les différents éléments pour aérer le site*/
+    border: 3px solid black;
+    padding: 50px;
+    color: rgb(236, 226, 226);
+    box-shadow: 0px 3px 15px rgb(170, 163, 163);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    font-family: "Palatino", sans-serif;
+}
+
+section>img {
+    width: 20%;
+    height: auto;
+}
+
+section>h2 {
+    text-align: center;
+    font-size: 240%;
+    font-family: Andale Mono;
+}
+
+/*Caractéristiques d'une liste dans une section*/
+
+section>ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*flex-boxe pour que les éléments soient alignés horizontalement*/
+    flex-direction: column;
+    justify-content: center;
+    /*On centre tous les éléments*/
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+
+section>ul>li>a {
+    font-size: 200%;
+}
+
+
+/*********************************************************Article***************************************************/
+
+/*Caractéristiques générales d'un article*/
+article {
+    background-image: radial-gradient(circle, #000000, #333333);
+    color: #e7d8d8;
+    padding: 2%;
+    font-family: Helvetica;
+    font-size: 180%;
+    margin-bottom: 4%;
+    box-shadow: 0px 8px 15px rgb(44, 43, 43);
+    border-radius: 30px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+article img {
+    height: auto;
+    width: 40%;
+}
+
+article>h2 {
+    text-align: center;
+}
+
+/*La majorité des paragraphes sont dans des articles*/
+
+p {
+    font-size: 140%;
+    margin-bottom: 1%;
+    font-size: 100%;
+}
+
+
+/*Classe pour gérer les images dans photos avec JS*/
+.image {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*On affiche les images sur 2 colonnes, centrées horizontalement*/
+    align-items: center;
+    align-content: stretch;
+}
+
+/*Taille uniforme des images*/
+.image img {
+    width: 45%;
+    margin: 1%;
+}
+
+article.textcenter {
+    text-align: center;
+    border: 1px solid white;
+}
+
+/*******************************************************************Tableau********************************************************************************/
+
+/*Toutes les caractéristiques pour mettre un tableau en forme, ligne, colonne, cellules...*/
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    /*Les bordures et espaces qui se touchent ne forment qu'un*/
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*La légende du tableau*/
+
+table>caption {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+/*L'entête du tableau*/
+
+table>thead {
+    font-size: 200%;
+    font-family: monospace;
+}
+
+
+/*Les cellules de l'entête du tableau*/
+
+th {
+    border: 1px solid rgb(95, 88, 88);
+    font-size: 110%;
+    /*Couleur de la cellule*/
+    background-color: #201f1f;
+    padding: 1%;
+}
+
+/*Le corps du tableau*/
+
+tbody {
+    background-image: radial-gradient(circle, #181818, #363535);
+}
+
+/*Les cellules du corps du tableau*/
+
+td {
+    padding: 30px;
+    font-size: 150%;
+    background-color: #252121;
+
+}
+
+
+/*************************************************Style****************************************/
+
+ul.pointListe {
+    list-style: disc;
+}
+
+/*Caractéristiques de titres de i-ème niveau*/
+
+h3 {
+    font-size: 150%;
+    font-family: bookman;
+}
+
+h4 {
+    font-size: 200%;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.bouton {
+    border: 4px solid rgb(223, 207, 207);
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgb(190, 179, 179);
+    /*Effet pour ressembler à un bouton*/
+    color: rgb(206, 183, 183);
+    align-self: flex-end;
+    /*On veut les boutons tout à droite du header*/
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*************************************************Bouton****************************************/
+
+/* Le conteneur de boutons */
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Les boutons */
+#buttonContainer button {
+    margin: 0.5%;
+    display: block;
+    margin-bottom: 2%;
+    padding: 1%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Les boutons, à l'exception de ceux dans l'en-tête */
+button:not(header button):not(.buttonForm) {
+    font-size: 150%;
+}
+
+button:not(.buttonForm) {
+    --glow-color: rgb(236, 209, 209);
+    --btn-image: radial-gradient(circle, #181818, #363535);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+}
+
+/*************************************************formulaire****************************************/
+
+/*Classe pour les formulaires d'inscription et de connexion*/
+
+.formulaire {
+    padding: 20%;
+    margin: 0;
+}
+
+/*Zone de légende des formulaires*/
+
+.formulaire legend {
+    font-size: 200%;
+    font-family: monospace;
+    font-weight: bold;
+    /*texte en gras pour que ça ressorte mieux*/
+    text-align: center;
+    margin-bottom: 5%;
+    /*Margin pour que la transitino du premier input soit lisible*/
+}
+
+.formulaire form {
+    display: flex;
+}
+
+.formulaire fieldset {
+    margin-top: -30%;
+    /*Margin négatif pour que ce soit très proche du header sans trou*/
+    /*Margin pour que ce ne soit pas collé à la bordure*/
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+    background-image: radial-gradient(circle, #181818, #363535);
+    /*Couleur de fond du formulaire*/
+}
+
+/*Centrer le bouton de validation des champs au milieu*/
+fieldset>button {
+    display: block;
+    margin: auto;
+}
+
+#boutonConnexion {
+    margin-top: 10%;
+}
+
+/* Styles pour le conteneur de formulaire */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: rgb(230, 214, 214);
+    margin: auto;
+}
+
+/* Messages d'erreur renvoyés par le serveur*/
+#usernameSpan,
+#firstnameSpan,
+#lastnameSpan,
+#dateSpan,
+#mdpSpan,
+#mailSpan {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: red;
+}
+
+/*Les labels des formulaires*/
+.container .label {
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+    position: absolute;
+    top: 13px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+/* Les champs de saisie */
+.container .input {
+    margin-bottom: 15%;
+    width: 90%;
+    height: 3em;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: #ece4e4;
+    font-size: 170%;
+    font-family: monospace;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+
+/*Le dernier champs à remplir lors de la connexion*/
+.last {
+    margin-bottom: 5% !important;
+}
+
+/**************************************************Forum************************************************/
+
+/* Espace total du forum et l'espace où l'utilisateur peut écrire */
+.forum,
+.forum textarea {
+    width: 100%;
+}
+
+/* Bouton du forum pour envoyer un message */
+.buttonForm {
+    padding: 20px 30px;
+    background-color: rgb(228, 228, 243);
+    color: #070707;
+    border: none;
+    border-radius: 5px;
+    font-size: 106%;
+    /* Curseur */
+    cursor: pointer;
+    /* Transition pour la couleur de fond */
+    transition: background-color 0.3s ease;
+}
+
+
+/* L'espace qui contient toutes les réponses du serveur pour le forum */
+.classCadre {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+}
+
+/* La classe contenant le message de l'utilisateur */
+.classMsg {
+    color: #e7dada;
+    margin-left: 1%;
+    /*Aligner tout sur le même ligne*/
+    margin-top: 0.3%;
+}
+
+/* La classe contenant la date et l'heure d'un message */
+.classDate {
+    font-size: 94%;
+    color: #666;
+    /*Aligner tout sur le même ligne*/
+    margin-top: 0.3%;
+}
+
+/* La classe contenant le nom de l'utilisateur */
+.className {
+    font-size: 126%;
+    color: #e9d7d7;
+    margin-left: 1%;
+}
+
+
+/* Span contenant tous les messages envoyés sur le serveur */
+#Message {
+    display: block;
+    /* Hauteur maximale */
+    max-height: 70vh;
+    /* Défilement vertical si nécessaire */
+    overflow-y: scroll;
+    /* Largeur de la barre de défilement */
+    scrollbar-width: thin;
+    /* Couleur de la barre et du fond */
+    scrollbar-color: rgba(0, 0, 0, 0.1) white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #1b1b1b;
+    color: #837474;
+}
+
+
+/* Barre de défilement dans WebKit (Safari et Chrome) */
+#Message::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Pouce de la barre de défilement dans WebKit */
+#Message::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/*************************************Légende****************************************/
+
+figure {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /*On veut que l'image et la légende soit l'un en-dessous de l'autre*/
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+figure>img {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    /*Non collée au footer*/
+}
+
+
+/*Description de l'image de la page d'accueil*/
+figcaption {
+    color: rgb(241, 229, 229);
+    font-family: monospace;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    margin-top: 85%;
+    /*La légende est placée en-dessous de l'image*/
+    left: 0;
+    right: 0;
+}
+
+/*Valeurs pour une vidéo sur grand/moyen écran*/
+video {
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    display: block;
+    margin-bottom: 4%;
+}
+
+/********************************* Cadre sur le côté ***********************************/
+
+
+/*Cadre servant à indiquer dans quelle page on se trouve et de naviguer syr celle-ci*/
+
+.sidebar {
+    margin-top: 0.5%;
+    margin-left: 1%;
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border: 3px solid rgb(56, 51, 51);
+}
+
+
+/******************************* Réponse du serveur *************************************/
+
+/*Classe du js pour le message d'authentification en cas d'échec*/
+
+.error {
+    color: red;
+    /*Montrer visuellement que l'utilisateur s'est trompé*/
+    font-size: 185%;
+    /*Se rapprocher du mot de passe*/
+    text-align: center;
+}
+
+
+/*Classe du js pour le message d'authentification en cas de réussite*/
+
+.good {
+    font-size: 185%;
+}

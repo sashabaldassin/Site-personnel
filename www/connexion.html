@@ -1,0 +1,101 @@
+<!--Document appartenant à Sasha BALDASSIN L2 info Groupe F-->
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upsiring</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/petitecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/grandecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/moyenecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="image/upsiring.jpg" alt="Logo"></a>
+
+        <h1> Le site officiel d'Upsiring</h1>
+        <a href="formulaire.html" class="bouton">
+            S'INSCRIRE
+        </a>
+        <a href="connexion.html" class="bouton">
+            SE CONNECTER
+        </a>
+    </header>
+
+    <nav>
+        <ul class="menu-large-screen">
+            <li><a href="index.html">
+                    <h2>Accueil</h2>
+                </a></li>
+            <li><a href="musique.html">
+                    <h2>Musiques</h2>
+                </a></li>
+            <li><a href="membres.html">
+                    <h2>Membres</h2>
+                </a></li>
+            <li><a href="photos.html">
+                    <h2>Photos</h2>
+                </a></li>
+            <li><a href="date.html">
+                    <h2>Dates</h2>
+                </a></li>
+            <li><a href="forum.html">
+                    <h2>Forum</h2>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="menuclass">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu-small-screen">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="musique.html">Musiques</a></li>
+            <li><a href="membres.html">Membres</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="date.html">Dates</a></li>
+            <li><a href="forum.html">Forum</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <form action="htbin/login.py" method="post" id="idConnexion" class="formulaire">
+            <fieldset>
+                <legend>Connexion</legend>
+
+                <div class="container">
+                    <input required="" type="text" name="username" id="username" class="input">
+                    <label for="username" class="label">Pseudo</label>
+                </div>
+
+                <div class="container last">
+                    <input required oninput="updatePasswordStrength()" type="password" name="userpwd" id="userpwd"
+                        class="input last">
+                    <label class="label last">Mot de passe</label>
+
+                </div>
+
+                <span id="connexion"></span>
+
+                <!--Seul bouton où l'on va mettre des margin-->
+                <button id="boutonConnexion" type="submit">Connexion</button>
+            </fieldset>
+        </form>
+
+        <script src="js/Connexion.js"></script>
+    </main>
+</body>
+
+</html>

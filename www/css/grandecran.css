@@ -1,0 +1,90 @@
+/*Document appartenant à Sasha BALDASSIN L2 info Groupe F*/
+/* Fichier contenant les modifications du CSS pour un grand écran*/
+
+@media only screen and (min-width: 1870px) {
+
+
+    /***************************** Header ********************************/
+
+    header h1 {
+        white-space: nowrap;
+        justify-content: center;
+        /*Sur grand format, on aligne le titre au centre*/
+        align-self: center;
+        /*On centre par rapport au titre*/
+        margin-right: 13%;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+
+    header img {
+        width: 8em;
+        /*Unité en em pour que le lien soit cliquable seulement sur l'imgae*/
+        height: auto;
+    }
+
+    header a {
+        width: auto;
+        /*lien uniquement sur l'image*/
+    }
+
+    /*Lien cliquable du header pour se connecter ou s'inscrire*/
+    header .bouton {
+        /*On veut les boutons tout à droite du header*/
+        margin-bottom: 2%;
+    }
+
+    /***************************** Navigation ********************************/
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background-color: rgb(39, 38, 37);
+        margin-bottom: 2%;
+        list-style: none;
+        /*On affiche pas les points des listes dans les barres de navigation*/
+        padding: 0;
+        border: 3px solid rgb(53, 46, 46);
+        font-size: 100%;
+    }
+
+    nav li {
+        margin-right: 3%;
+        /*Espace pour l'esthétisme*/
+    }
+
+    /***************************** Cadre sur le côté ********************************/
+
+    .sidebar>h2 {
+        text-align: center;
+        /*Pour le cadre à gauche, le texte est au milieu*/
+    }
+
+
+    /*Sur grand écran, on affiche l'image à droite du texte dans les section ayant la classe textcenter*/
+    section.textcenter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    /*Espace entre le texte et l'image*/
+    .textcenter img {
+        margin-left: 10%;
+    }
+
+    /*"Bouton" pour se rendre sur la page des dates*/
+    .bouton:not(header .bouton) {
+        text-align: center;
+        width: 22%;
+        height: 20%;
+        display: block;
+        margin-bottom: 4%;
+        /*Centrer le "bouton" pour les dates*/
+        margin-left: 37%;
+    }
+
+}

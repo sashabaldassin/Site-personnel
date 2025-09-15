@@ -1,0 +1,64 @@
+/*Document appartenant à Sasha BALDASSIN L2 info Groupe F*/
+/* Fichier contenant les modifications du CSS pour un écran moyen*/
+
+@media only screen and (min-width:1330px) and (max-width: 1870px) {
+
+    /********************************* Header ***********************************/
+
+    /*Afin de gagner de la place sur un écran moyen, on n'affiche pas l'image*/
+    header img {
+        display: none;
+    }
+
+    /*Lien cliquable du header pour se connecter ou s'inscrire*/
+    header .bouton {
+        align-self: flex-end;
+        /*On veut que les boutons soient tout à droite du header*/
+    }
+
+    /********************************* Navigation ***********************************/
+
+    /*Barre de navigation horizontale*/
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background-color: rgb(39, 38, 37);
+        margin-bottom: 2%;
+        list-style: none;
+        padding: 0;
+        border: 3px solid rgb(53, 46, 46);
+        font-size: 100%;
+    }
+
+    /*Margin pour l'esthétisme, un peu moins grande que pour un grand écran*/
+
+    nav li {
+        margin-right: 2%;
+    }
+
+
+    /********************************* Autre **********************************/
+
+    /*Pour que ce soit lisible, on n'affiche pas le bouton vers les dates*/
+
+    .bouton:not(header .bouton) {
+        display: none;
+    }
+
+    section.textcenter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        /*On aligne le texte à gauche pour les sections*/
+    }
+
+    /*On considère l'écran assez grand pour afficher le texte sur le côté*/
+
+    .sidebar>h2 {
+        text-align: center;
+    }
+}

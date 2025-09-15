@@ -1,0 +1,114 @@
+<!--Document appartenant à Sasha BALDASSIN L2 info Groupe F-->
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upsiring</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/petitecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/grandecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/moyenecran.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="image/upsiring.jpg" alt="Logo"></a>
+
+        <h1> Le site officiel d'Upsiring</h1>
+        <a href="formulaire.html" class="bouton">
+            S'INSCRIRE
+        </a>
+        <a href="connexion.html" class="bouton">
+            SE CONNECTER
+        </a>
+    </header>
+
+    <nav>
+        <ul class="menu-large-screen">
+            <li><a href="index.html">
+                    <h2>Accueil</h2>
+                </a></li>
+            <li><a href="musique.html">
+                    <h2>Musiques</h2>
+                </a></li>
+            <li><a href="membres.html">
+                    <h2>Membres</h2>
+                </a></li>
+            <li><a href="photos.html">
+                    <h2>Photos</h2>
+                </a></li>
+            <li><a href="date.html">
+                    <h2>Dates</h2>
+                </a></li>
+            <li><a href="forum.html">
+                    <h2>Forum</h2>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="menuclass">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu-small-screen">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="musique.html">Musiques</a></li>
+            <li><a href="membres.html">Membres</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="date.html">Dates</a></li>
+            <li><a href="forum.html">Forum</a></li>
+        </ul>
+    </div>
+
+
+    <main>
+        <div class="sidebar">
+            <h2>Photos</h2>
+
+
+        </div>
+        <!-- On affiche au minimum ces 3 photos sur la page-->
+        <div class="image" id="gallery">
+            <img src="image/2024.JPG" alt="Description de l'image"> <br>
+            <img src="image/duo.JPG" alt="Description de l'image"> <br>
+            <img src="image/2023.jpg" alt="Description de l'image"> <br>
+        </div>
+
+
+        <div id="buttonContainer">
+            <button id="loadLessBtn" style="display: none;">Afficher moins</button>
+            <button id="loadMoreBtn">Afficher plus</button>
+        </div>
+        <script src="js/script.js"></script>
+
+        <footer>
+            <nav>
+                <a href="https://www.instagram.com/upsiring_band?igsh=dnB5Z3g4a2wybzJ1" target="_blank">
+                    <img src="image/insta.jpg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100093537181391" target="_blank">
+                    <img src="image/facebook.jpg" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@upsiring" target="_blank">
+                    <img src="image/tiktok.jpg" alt="Tiktok">
+                </a>
+                <a href="https://www.youtube.com/@UPSIRING_BAND" target="_blank">
+                    <img src="image/youtube.jpg" alt="Youtube">
+                </a>
+            </nav>
+        </footer>
+
+    </main>
+</body>
+
+</html>
